@@ -10,4 +10,5 @@ public class WebfluxapiApplication {
 		SpringApplication.run(WebfluxapiApplication.class, args);
 	}
 
+
 }
