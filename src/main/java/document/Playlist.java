@@ -6,6 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 public class Playlist {
 
+
     @Id
     private String id;
     private String nome;
