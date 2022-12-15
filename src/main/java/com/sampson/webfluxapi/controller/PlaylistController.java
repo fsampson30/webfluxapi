@@ -7,7 +7,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import com.sampson.webfluxapi.services.PlaylistService;
 
-@RestController
+//@RestController
 public class PlaylistController {
 
     @Autowired
