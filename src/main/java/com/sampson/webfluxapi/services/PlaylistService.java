@@ -1,6 +1,6 @@
-package services;
+package com.sampson.webfluxapi.services;
 
-import document.Playlist;
+import com.sampson.webfluxapi.document.Playlist;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
