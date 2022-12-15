@@ -2,10 +2,7 @@ package com.sampson.webfluxapi.controller;
 
 import com.sampson.webfluxapi.document.Playlist;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import com.sampson.webfluxapi.services.PlaylistService;
@@ -27,7 +24,7 @@ public class PlaylistController {
     }
 
     @PostMapping(value = "/playlist")
-    public Mono<Playlist> savePlaylist(Playlist playlist){
+    public Mono<Playlist> savePlaylist(@RequestBody Playlist playlist){
         return playlistService.Save(playlist);
     }
 }
